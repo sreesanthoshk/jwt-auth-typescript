@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title>
+    Project Dashboard
+  </title>
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  />
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- TOP BAR -->
+
+    <div class="top-bar">
+
+      <h1>
+        Project Dashboard
+      </h1>
+
+      <button
+        class="logout-btn"
+        onclick="logout()"
+      >
+
+        Logout
+
+      </button>
+
+    </div>
+
+    <!-- USER DETAILS -->
+
+    <div class="user-section">
+
+      <h2>
+        User Details
+      </h2>
+
+      <div id="userDetails"></div>
+
+    </div>
+
+    <!-- CREATE PROJECT -->
+
+    <div
+      class="create-section"
+      id="createSection"
+    >
+
+      <h2>
+        Create Project
+      </h2>
+
+      <div class="form-grid">
+
+        <select id="employeeId">
+
+          <option value="">
+            Select Employee
+          </option>
+
+        </select>
+
+        <input
+          type="text"
+          id="taskName"
+          placeholder="Task Name"
+        />
+
+        <input
+          type="text"
+          id="description"
+          placeholder="Description"
+        />
+
+      </div>
+
+      <button
+        class="create-btn"
+        onclick="createProject()"
+      >
+
+        Create Project
+
+      </button>
+
+    </div>
+
+    <!-- PROJECTS -->
+
+    <div class="project-section">
+
+      <h2>
+        All Projects
+      </h2>
+
+      <div id="projects"></div>
+
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+
+</body>
+
+</html>
